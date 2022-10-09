@@ -1,0 +1,482 @@
+/* variables */
+:root{
+    --darkblue:#110b38;
+    --padding-container: 100px 0;
+    --color-title:rgb(184, 135, 0);
+    --lightblue:rgba(89, 196, 223, 0.952);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--darkblue);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+
+.text-topbar{
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.social-media{
+    padding-right: 20px;
+    text-align: right;
+    margin-top: -18px;
+}
+
+.social-media-icon{
+    color: #FFF;
+    padding-left: 10px;
+}
+
+.social-media-icon:hover{
+    color: rgb(0, 204, 255);
+    
+}
+
+.logo-academy{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.input {
+    margin-top:30px;
+    margin-bottom:10px;
+    padding-left:30px;
+    width:400px;
+    height:50px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navegation{
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 20px;
+}
+
+.shortcut{
+    text-decoration: none;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    color:rgba(0, 162, 255, 0.788);
+    font-weight:bolder;
+}
+
+.shortcut:hover{
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: #FFFFFF; 
+}
+
+/*imagen de incio*/
+
+.start-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    padding: var(--padding-container);
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    
+}
+
+.start-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url("../img/idioma-def.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 90%, 0 60%);
+    z-index: -1;
+}
+
+.start-title{
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.start-parr{
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.start-anchor{
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: var(--darkblue);
+    text-decoration: none;
+    width: 180px;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+/*seccion de noticias*/
+
+.news{
+    background-color:var(--darkblue);
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+.news-title{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.news-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.news-body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.news-body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.news-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.news-text{
+    max-width: 700px;
+}
+
+.news-subtitle{
+    padding-bottom: 15px;
+}
+
+.news-parr{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+/* seccion de oferta academica*/
+
+.courses-container{
+    text-align: center;
+    height: 400px;
+}
+
+.courses-title{
+    margin-top: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.courses-parr{
+    padding-top: 15px;
+    font-style: oblique;
+}
+
+.courses-table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.course-element{
+    background-color: rgb(184, 135, 0);
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+}
+
+.course-name{
+    color:#FFF;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.course-level{
+    color: #FFF;
+    font-size: medium;
+    font-style: italic;
+}
+
+.course-element:hover{
+    background-color:rgba(89, 196, 223, 0.808);
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+}
+
+/* seccion de horario*/
+
+.schedule-container{
+    height: 525px;
+    text-align: center;
+    
+}
+
+.schedule-container2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+table th{
+    width: 10em;
+    height: 3em;
+}
+
+.schedule-title{
+    margin-top: 40px;
+    color: var(--color-title);
+    font-weight:bold;
+}
+
+.table-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{ 
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-spacing: 0;
+}
+
+.schedule-table{
+    border: solid #ccc 1px; 
+    -moz-border-radius: 20px; 
+    -webkit-border-radius: 20px; 
+    border-radius: 20px; 
+    -webkit-box-shadow: 0 3px #ccc; 
+    -moz-box-shadow: 0 3px #ccc; 
+    box-shadow: 0 3px #ccc; 
+}
+
+.thead{
+    background-color: var(--darkblue);
+    color: #FFFFFF;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover{
+    border: solid 1px lightslategray;
+}
+
+/*seccion de notas*/
+
+.notes-container{
+    height: 550px;
+}
+
+.notes-title{
+    margin-top: 50px;
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 20px;
+}
+
+.select-box{
+    display: flex;
+    width: 200px;
+}
+
+.select-box .option-container{
+    background-color: #FFF;
+    color: black;
+    /*max-height: 0;*/
+    width: 100%;
+    /*opacity 0;*/
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.select-box .option
+.course-selected{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover{
+    background-color: aliceblue;
+
+}
+
+.select-box label{
+    cursor: pointer;
+}
+
+.select-box .option .radio{
+    display: none;
+}
+
+/*footer*/
+footer{
+    background-color: var(--darkblue);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left:20px;
+}
+
+.textoCopyright{
+    color:#FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.button {
+    color: white;
+    font-size: 110%;
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: var(--darkblue);
+    
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.linea{
+    border: 1px solid rgb(184, 135, 0);
+}
+
+.BoxProfile{
+    padding-bottom: 60px;
+}
+
+.Perfil-Usuario{
+    text-align: center;
+    padding-top: 60px;
+    color:rgb(184, 135, 0);
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+
+
+.profile{
+    padding-top: 80px;
+    padding-left: 20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.profile-photo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 80px;
+}
+
+.foto-usuario{
+    width: 80%;
+    height: 100%;
+    
+}
+
+.person-info{
+    padding-top: 20px;
+}
+
+
+.labelProfile{
+    color:rgb(0, 204, 255);
+    font-weight: bold;
+}
+
+.profileParrafo{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.boton-cambiarPassword{
+    padding-top: 40px;
+    padding-left: 330px;
+}
+
+.PassButton{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 204, 255);
+}
+
+.PassButton:hover{
+    text-decoration:underline;
+}
+
+/*Estilos de la barra de navegación de control de estudios */
+
+
+
+
+

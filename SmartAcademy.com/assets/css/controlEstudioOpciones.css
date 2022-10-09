@@ -1,0 +1,93 @@
+.agregar-usuario{
+    padding-top: 40px;
+    text-align:center;
+    padding-bottom: 60px;
+}
+
+.botonBuscarCaja{
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botonBuscar{
+    width:200px;
+    height:40px;
+    background-color:#FFF;
+    color:rgb(0, 204, 255);
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 2px 2px;
+
+}
+
+.botonBuscar:hover{
+
+        background-color:rgb(218, 218, 218);
+        font-weight:bold;
+    }
+
+.botonesEliminar{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.botonEliminar{
+    width:200px;
+    height:40px;
+    background-color:#FFF;
+    color:rgb(0, 204, 255);
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 2px 2px;
+    margin-right: 40px;
+}
+
+.botonEliminar:hover{
+    background-color:rgb(218, 218, 218);
+        font-weight:bold;
+}
+
+.botonCancelar{
+    width:200px;
+    height:40px;
+    background-color:#FFF;
+    color:rgb(0, 204, 255);
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+
+.botonCancelar:hover{
+    background-color:rgb(218, 218, 218);
+        font-weight:bold;
+}
+
+.busquedaPerfil{
+    padding-bottom: 90px;
+    padding-top:20px;
+}
+
+.cursoEncontrado{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: flex;
+}
+
+
+
+
+

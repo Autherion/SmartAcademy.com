@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Idiomas Smart | Inicio de Sesion</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets\css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+
+<header>
+    <div class="top-bar">  
+        <small><i class="text-topbar">+58 234 543 8904 | atencion.cliente@.smartAcademy.com | RIF J-40018420</i></small>
+        <div class="social-media">
+            <a href="https://www.instagram.com" class="social-media-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com" class="social-media-icon" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.outlook.com" class="social-media-icon" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+</header>
+
+    <div class="information" id="information" >
+        <section class="n">
+            <img src="../assets\img\logo2.png" alt="logo" class="logo-academy">
+                <nav class="navegation">
+                    <a href="#" class="shortcut">Inicio</a>
+                    <a href="#contenedor" class="shortcut">Iniciar Sesión</a>
+                    <a href="#registro" class="shortcut">Registrar</a>
+                </nav>
+                
+                <div class="school-origins">
+                <h2 class="titulo2-quienesSomos">¿Quiénes Somos?</h2>
+                <p class="parrafo-quienesSomos">La Academia de Idiomas Smart nace con la finalidad de otorgarle al <b>pueblo venezolano</b> la posibilidad de aprender <b>nuevos idiomas</b>, mediante la implementación de prácticas con <b>
+                tecnología</b> y profesores <b>nativos</b>.<br><br>
+                Fue fundada en el año 1990 por el ingeniero <b>Andrés Gutierrez</b>, y cuenta con más de 10 reconocimientos donde es catalogado como uno de los mejores institutos de idiomas en el país
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="sign-in-school" id="contenedor">
+            
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form id="loginform">
+                    <label for="usuario">Usuario:</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Ingrese su cédula" required>
+                    
+                    <input id="password" type="password" placeholder="Ingrese su contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                </form>
+            </div>
+            <div id="derecho">
+                <div class="titulo">
+                    Inicio de Sesión
+                </div>
+                <hr>
+                <div class="pie-form">
+                    <a href="#">¿Olvidó su contraseña?</a>
+                    <a href="#">Regístrate</a>
+                    <hr>
+                    <a href="#">« Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up" id="registro">
+        <div class="sign-form">
+            <h2 class="tituloRegistro">Registro de Usuario</h2>
+                <form action="#" method="post" name="form">
+                    <label for="" >Nombre:</label><br>
+                    <input type="text" name="txtNombre" placeholder="Ingrese su nombre" class="input"><br>
+                    
+                    <label for="">Apellido:</label><br>
+                    <input type="text" name="txtApellido" placeholder="Ingrese su apellido" class="input"><br>
+
+                    <label for="">Cédula:</label><br>
+                    <input type="text" name="txtTCedula" placeholder="Ingrese su cédula" class="input"><br>
+                    
+                    <label for="">Fecha de Nacimiento:</label><br>
+                    <input type="date" name="fecha-i" placeholder="" class="input"><br>
+
+                    <label for="">Teléfono:</label><br>
+                    <input type="text" name="txtTelefono" placeholder="Ingrese su numero de Telefono" class="input"><br>
+    
+                    <label for="">Dirección:</label><br>
+                    <textarea name="txtComentarios" cols="46" rows="4" class="direccionTextarea"></textarea><br>
+
+                    <label for="">Correo:</label><br>
+                    <input type="email" name="txtEmail" placeholder="Ingrese su email" class="input"><br>
+
+                    <label for="">Contraseña:</label><br>
+                    <input type="password" name="txtPasssword" placeholder="Ingrese su contraseña" class="input"><br> 
+                    <button type="submit" name="btn" value="Registrar" class="botonRegistro">Registrarse</button><br>
+                </form>
+        </div>
+    </section>
+    <footer class="pie-pagina">
+        <small><i class="textoCopyright">Copyright 2022. Todos los derechos reservados pertenecientes a la academia Smart</i></small>
+    </footer>
+    
+    
+</body>
+
+</html>
