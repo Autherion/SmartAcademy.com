@@ -260,7 +260,7 @@ body{
 /* seccion de horario*/
 
 .schedule-container{
-    height: 525px;
+    height: 400px;
     text-align: center;
     
 }
@@ -284,6 +284,7 @@ table th{
 .table-container{
     margin-top: 40px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -476,7 +477,89 @@ th, td {
 
 /*Estilos de la barra de navegación de control de estudios */
 
+/* Combobox de Profesores */
+label {
+    font-weight: bolder;
+}
 
+ .custom-select {
+    position: relative;
+    font-family: Arial;
+    text-align: center;
+    left: 45%;
+    margin-top: 35px;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: var(--darkblue);
+    margin-top: 15px;
+  }
+ 
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: var(--darkblue);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } 
 
+  .informacion-curso {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 600;
+  }
 
+  .user-container {
+    height: 450px;
+  }
 
+  .notes-container {
+    height: 170px;
+  }
+
+  
+  .notes-container > h1 {
+    text-align: center;
+  }
+  
+  .user-title  {
+    padding-bottom: 30px;
+    color: var(--color-title);
+  }
